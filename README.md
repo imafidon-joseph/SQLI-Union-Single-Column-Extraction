@@ -1,7 +1,6 @@
 # SQLI-Union-Single-Column-Extraction
 This project demonstrates a UNION-based SQL injection attack used to retrieve multiple values from a single column. It covers identifying the number of columns, locating text-compatible fields, crafting payloads, and extracting sensitive data such as usernames and passwords, leading to administrator access.
-# ⚠️ Caution 
-This project demonstrates offensive security techniques in a controlled lab environment. Unauthorized testing against real systems is illegal and unethical.
+
 
 # 🎯 Objective
 	•	Identify SQL injection vulnerability
@@ -94,6 +93,20 @@ This project demonstrates offensive security techniques in a controlled lab envi
 
    Result: Successful login as administrator.
 
-    
+# ⚠️ Impact
+	•	Exposure of sensitive user data
+	•	Unauthorized access to admin account
+	•	Potential full system compromise
 
-    
+# 🛡️ Mitigation
+	•	Use parameterized queries (prepared statements)
+	•	Implement input validation and sanitization
+	•	Apply least privilege to database users
+	•	Disable verbose error messages
+
+# 🎯 Conclusion
+
+The application was vulnerable to UNION-based SQL injection due to improper input handling. This allowed extraction of sensitive data and full administrative compromise.
+
+# ⚠️ Disclaimer
+This project demonstrates offensive security techniques in a controlled lab environment. Unauthorized testing against real systems is illegal and unethical.
